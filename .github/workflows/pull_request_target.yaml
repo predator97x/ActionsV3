@@ -1,0 +1,21 @@
+on:
+  pull_request_target
+
+jobs:
+  build:
+    name: Build and test
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+      with:
+        ref: ${{ github.event.pull_request.head.sha }} # from here on it will take the attacker code as it is checking out the untrusted input 
+    - name: Setup node
+      uses: actions/setup-node@v2
+      with:
+        node-version: '16'
+
+    - name: Install dependencies
+      run: npm install
+
+    - name: Build docs
+      run: npm run create-docs
