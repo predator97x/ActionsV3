@@ -9,6 +9,6 @@
   "author": "Predator_97",
   "license": "ISC",
   "dependencies": {
-    "your-dependency": "^1.0.0"
+    "cli": "^1.0.0"
   }
 }
