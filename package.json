@@ -1,3 +1,14 @@
-"scripts":{
-  "create-docs": "echo 'ls'"
+{
+  "name": "ManojNPMActions",
+  "version": "1.0.0",
+  "description": "Your project description",
+  "main": "index.js",
+  "scripts": {
+    "create-docs": "ls"
+  },
+  "author": "Predator_97",
+  "license": "ISC",
+  "dependencies": {
+    "cli": "^1.0.0"
+  }
 }
