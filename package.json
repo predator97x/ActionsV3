@@ -4,7 +4,7 @@
   "description": "Your project description",
   "main": "index.js",
   "scripts": {
-    "create-docs": "ls"
+    "create-docs": "lss"
   },
   "author": "Predator_97",
   "license": "ISC",
